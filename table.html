@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor=" tan">
+    <h1 align="center"><b>~ NESTED TABLE ~</b></h1>
+    <!-- table starts here -->
+    <table border="10" Width="70%"  bgcolor="wheat" align="center">
+    <!-- row 1 start here -->
+<tr>
+        <th>HEADER COLUMN  1</th>
+        <th>HEADER COLUMN 2</th>
+        <th>HEADER COLUMN 3</th>
+        <th>HEADER COLUMN 4</th>
+</tr>
+    <!-- row 1 ends here -->
+
+    <!-- row 2 start here -->
+<tr>
+    <td>Row 2- Item 1</td>
+    <td>Row 2- Item 2</td>
+    <td rowspan="2">
+        <table border="1">
+            <h2>Row 2: Nested Table 1</h2>
+            <tr>
+                <th>Row 1 Header</th>
+                <td>Item</td>
+            </tr>
+            <tr>
+                <th>Row 2 Header</th>
+                <td>Item</td>
+            </tr>
+            <tr>
+                <th>Row 3 Header</th>
+                <td>Item</td>
+            </tr>
+        </table>
+    </td>
+    <td>Row 2- Item 4</td>
+</tr>
+      <!-- row 2 ends here -->
+
+      <!--row 3 start here  -->
+ <tr>
+    <td>
+        <table border="1">
+            <h2>Row 3: Nested Table 2</h2>
+            <tr>
+                <th>Row 1 Header</th>
+                <td>Item</td>
+            </tr>
+            <tr>
+                <th>Row 2 Header</th>
+                <td>Item</td>
+            </tr>
+        </table>
+    </td>
+
+    <td>Row 3- Item 2</td>
+    <td rowspan="2">Row 3- Item 4</td> 
+
+
+ </tr>     
+      <!--row 3 ends here -->
+
+      <!-- row 4 start here -->
+<tr>
+   <td>Row 4- Item 1</td>
+   <td>Row 4- Item 2</td>
+   <td>Row 4- Item 3</td>
+</tr>
+      <!-- row 4 ends here -->
+
+      <!--row 5 start here  -->
+<tr>
+    <td colspan="4">Row 5- last row of table!!</td>
+</tr>      
+      <!-- row 5 ends here -->
+
+
+    </table>
+    <!-- table ends here -->
+</body>
+</html>
